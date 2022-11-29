@@ -1,38 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+}
+body {
+  background-color: #333 !important;
+  background-image: url("./images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg");
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  color: #fff;
+  min-height: 800px;
+  background-color: black;
+  margin: 5rem auto;
+  border: 3rem solid #4d6176;
+  border-radius: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskBg {
+  background-color: #41464b;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskBg div {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskNumber {
+  color: #b8cbcb;
+  border: 3px solid #b8cbcb;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.iconswrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconswrapper span {
+  display: inline-block;
+  margin: 0px 10px;
+  cursor: pointer;
+  color: #b8cbcb;
+}
+
+.iconswrapper span:hover {
+  color: #94831e;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+#newtsk,
+#updateImput {
+  background-color: #b8cbcb;
+}
+
+#addTask {
+  background-color: #6418af;
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+#cancel,
+#addTask,
+#newtsk,
+#update,
+#updateImput {
+  margin: 3rem auto;
+}
+
+#update,
+#cancel {
+  margin-right: 8px;
+  border: none;
+}
+
+#update {
+  background-color: #6418af;
+}
+
+#cancel {
+  background-color: #916202;
+  color: #b8cbcb;
 }

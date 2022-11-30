@@ -41,7 +41,7 @@ const ToDo = ({toDo, markAsDone, setUpdateData, deleteTask}) => {
                       </span>
                     )}
 
-                    <span onClick={() => deleteTask(task.id)} title="Delete">
+                    <span id="del" onClick={() => deleteTask(task.id)} title="Delete">
                       <FontAwesomeIcon icon={faTrashCan} />
                     </span>
                   </div>
